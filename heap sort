@@ -1,0 +1,40 @@
+class Heapsort
+{
+public static int[] build_max_heap(int[] A, int a)
+{
+    int lc=2a;
+    int rc=2a+1;
+    
+    if(A[lc]<A[rc]){
+        int temp=A[rc];
+        A[rc]=A[lc];
+        A[lc]=temp;
+    }
+    
+    if(A[a]<A[leftchild]){
+        if(A[a]<A[rc]){
+            int temp1=A[lc];
+            A[lc]=A[rc];
+            A[rc]=A[a];
+            A[a]=temp1;
+        }
+        else{int temp3=A[lc];
+            A[lc]=A[a];
+            A[a]=A[lc];
+        }
+    }
+    
+    return A[];
+}
+
+public static void main(){
+    
+    int[] arr=new int[]{46,4,12,13,15,2,3,9,8};
+    int parents=(arr.length)/2;
+    for(int i=parents; i>0; i--){
+        A[]=build_max_heap(A,i);
+    }
+    
+}
+
+}
